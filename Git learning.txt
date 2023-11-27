@@ -1,0 +1,121 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS D:\projects\e-commerce-data-repo> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    src/test/java/com/orderproject/UnitTest.java
+        new file:   src/test/java/com/orderproject/controller/OrderControllerTest.java
+        new file:   src/test/java/com/orderproject/controller/OrderItemControllerTest.java
+        new file:   src/test/java/com/orderproject/serviceimpl/OrderItemServiceImplTest.java
+        new file:   src/test/java/com/orderproject/serviceimpl/OrderServiceImplTest.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   pom.xml
+        modified:   src/main/java/com/orderproject/controller/OrderController.java
+        modified:   src/main/java/com/orderproject/controller/OrderItemController.java
+        modified:   src/main/java/com/orderproject/entity/Order.java
+        modified:   src/main/java/com/orderproject/entity/OrderItems.java
+        modified:   src/main/java/com/orderproject/service/OrderItemService.java
+        modified:   src/main/java/com/orderproject/service/OrderService.java
+        modified:   src/main/java/com/orderproject/serviceimpl/OrderItemServiceImpl.java
+        modified:   src/main/java/com/orderproject/serviceimpl/OrderServiceImpl.java
+        modified:   src/main/java/com/orderproject/util/PathConstant.java
+        modified:   src/test/java/com/orderproject/controller/OrderControllerTest.java
+        modified:   src/test/java/com/orderproject/controller/OrderItemControllerTest.java
+        modified:   src/test/java/com/orderproject/serviceimpl/OrderItemServiceImplTest.java
+        modified:   src/test/java/com/orderproject/serviceimpl/OrderServiceImplTest.java
+
+PS D:\projects\e-commerce-data-repo> git remote -v
+origin  https://github.com/pushpendra-it/e-commerce-data-repo.git (fetch)
+origin  https://github.com/pushpendra-it/e-commerce-data-repo.git (push)
+PS D:\projects\e-commerce-data-repo> git add .
+PS D:\projects\e-commerce-data-repo> git commit -m "order api changes with test cases"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'perennial@DESKTOP-DJDJ2VR.(none)')
+PS D:\projects\e-commerce-data-repo> git config --global user.email "pushpendrasen2070@gmail.com"
+PS D:\projects\e-commerce-data-repo> git config --global user.name "pushpendra-it"
+PS D:\projects\e-commerce-data-repo> git commit -m "order api changes with test cases"                  
+[master 723c2f9] order api changes with test cases
+ 15 files changed, 1010 insertions(+), 227 deletions(-)
+ delete mode 100644 src/test/java/com/orderproject/UnitTest.java
+ create mode 100644 src/test/java/com/orderproject/controller/OrderControllerTest.java
+ create mode 100644 src/test/java/com/orderproject/controller/OrderItemControllerTest.java
+ create mode 100644 src/test/java/com/orderproject/serviceimpl/OrderItemServiceImplTest.java
+ create mode 100644 src/test/java/com/orderproject/serviceimpl/OrderServiceImplTest.java
+PS D:\projects\e-commerce-data-repo> git push
+Enumerating objects: 54, done.
+Counting objects: 100% (54/54), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (27/27), done.
+Writing objects: 100% (32/32), 8.91 KiB | 536.00 KiB/s, done.
+Total 32 (delta 13), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (13/13), completed with 7 local objects.
+To https://github.com/pushpendra-it/e-commerce-data-repo.git
+   1ba11bb..723c2f9  master -> master
+PS D:\projects\e-commerce-data-repo> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+PS D:\projects\e-commerce-data-repo> git remote set-url origin https://pushpendrasen@bitbucket.org/perennialsys/internal_training_pushpendra.git
+PS D:\projects\e-commerce-data-repo> git remote -v
+origin  https://pushpendrasen@bitbucket.org/perennialsys/internal_training_pushpendra.git (fetch)
+origin  https://pushpendrasen@bitbucket.org/perennialsys/internal_training_pushpendra.git (push)
+PS D:\projects\e-commerce-data-repo> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+PS D:\projects\e-commerce-data-repo> git checkout -b feature/orderapi-feature
+Switched to a new branch 'feature/orderapi-feature'
+PS D:\projects\e-commerce-data-repo> git status
+On branch feature/orderapi-feature
+nothing to commit, working tree clean
+PS D:\projects\e-commerce-data-repo> git add .
+PS D:\projects\e-commerce-data-repo> git commit -m "initial orderapi changes"
+On branch feature/orderapi-feature
+nothing to commit, working tree clean
+PS D:\projects\e-commerce-data-repo> git push
+fatal: The current branch feature/orderapi-feature has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature/orderapi-feature
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS D:\projects\e-commerce-data-repo> git push --set-upstream origin feature/orderapi-feature
+Enumerating objects: 86, done.
+Counting objects: 100% (86/86), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (68/68), done.
+Writing objects: 100% (86/86), 81.65 KiB | 5.83 MiB/s, done.
+Total 86 (delta 20), reused 48 (delta 6), pack-reused 0
+remote: 
+remote: Create pull request for feature/orderapi-feature:
+remote:   https://bitbucket.org/perennialsys/internal_training_pushpendra/pull-requests/new?source=feature/orderapi-feature&t=1
+remote:
+To https://bitbucket.org/perennialsys/internal_training_pushpendra.git
+ * [new branch]      feature/orderapi-feature -> feature/orderapi-feature
+branch 'feature/orderapi-feature' set up to track 'origin/feature/orderapi-feature'.
+PS D:\projects\e-commerce-data-repo> git push
+Everything up-to-date

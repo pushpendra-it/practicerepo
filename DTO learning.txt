@@ -1,0 +1,3 @@
+Data transfer object (Architectural design pattern)
+Advantages of DTO : we can reduce more remote calls 
+Note : we can put all the information togather and send back to the client
