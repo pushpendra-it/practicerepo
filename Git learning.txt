@@ -1,7 +1,7 @@
 Windows PowerShell
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+Instal the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
 
 PS D:\projects\e-commerce-data-repo> git status
 On branch master
@@ -127,6 +127,10 @@ Everything up-to-date
 5  git commit -m "my commit"
 6. git push
 
+
+
 1111111111
 11111111111
-11111111111git
+11111111111
+55555555555555555
+
