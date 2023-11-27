@@ -119,3 +119,10 @@ To https://bitbucket.org/perennialsys/internal_training_pushpendra.git
 branch 'feature/orderapi-feature' set up to track 'origin/feature/orderapi-feature'.
 PS D:\projects\e-commerce-data-repo> git push
 Everything up-to-date
+
+1. git init
+2. git clone
+3. git remote .....
+4. git add /git add .
+5  git commit -m "my commit"
+6. git push
